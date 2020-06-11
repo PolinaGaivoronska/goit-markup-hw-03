@@ -1,0 +1,194 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --title-secondary-text-color: #ffffff;
+  --primary-background-color: #e5e5e5;
+  --accent-color: #2196f3;
+}
+body {
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+/* Стили для index.html */
+
+/* Logo */
+.logo-header {
+  font-family: Raleway, sans-serif;
+  color: #212121;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.logo-web-header {
+  color: #2196f3;
+}
+
+/* Навигация */
+.site-nav a {
+    color: #212121;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196f3;
+}
+.site-nav .link.current {
+    color: #2196f3;
+}
+.contacts a {
+  color: #212121;
+}
+.contacts .tipe:hover,
+.contacts .tipe:focus { 
+  color: #2196f3;
+}
+
+/* Герой */
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--title-secondary-text-color);
+}
+.button {
+  background-color: var(--accent-color);
+  color: var(--title-secondary-text-color);
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+}
+
+/* Секции */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+/* Секция Приемущества */
+.invisible-title {
+    display: none;
+}
+.advantages-list .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.advantages-text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+/* Секция Деятельность */
+.ativity-list .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-secondary-text-color);
+}
+
+/* Секция Команда */
+.team-list .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.team-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+}
+
+/* Секция Постоянные клиенты */
+
+
+/* Футтер */
+.logo-footer {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  }
+  .logo-web-footer {
+    color: #2196f3;
+  }
+  .tipe-address {
+      color: #ffffff;
+  }
+  .footer-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-secondary-text-color);
+  }
+  .social-link {
+    color: #ffffff;
+  }
+  .social-link:hover,
+  .social-link:focus {
+      color: #2196f3;
+  }
+  
+  /* Стили для portfolio.html */
+
+  /* Секция */
+  .radio-button {
+      background-color: #F5F4FA;
+      color: #212121;
+  }
+  .radio-button:hover,
+  .radio-button:focus {
+      background-color: #2196f3;
+      color: #ffffff;
+  }
+  .project-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+  }
+  .text-secondary {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: var(--title-secondary-text-color);
+  }
+  .text-primary {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+  }

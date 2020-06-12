@@ -16,9 +16,29 @@ a {
 ul {
     list-style: none;
 }
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+} 
+
 
 /* Стили для index.html */
 
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.title {
+  margin: 0px;
+  padding: 0px;
+}
 /* Logo */
 .logo-header {
   font-family: Raleway, sans-serif;
@@ -53,26 +73,46 @@ ul {
 }
 
 /* Герой */
+
+.hero {
+  text-align: center;
+  margin-bottom: 94px;
+}
 .hero-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--title-secondary-text-color);
 }
 .button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
   background-color: var(--accent-color);
   color: var(--title-secondary-text-color);
-  width: 200px;
+  font-size: 16px;
+  line-height: 30px;
+  min-width: 200px;
   height: 50px;
-  left: 700px;
-  top: 430px;
+  letter-spacing: 0.06em; 
+  align-items: center;
+  text-align: center;
 }
 
 /* Секции */
+.section{
+  margin-bottom: 94px;
+  margin-top: 0px;
+  padding: 0px;
+}
 .section-title {
+  padding: 0px;
+  margin-bottom: 50px;
+  margin-top: 0px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
@@ -85,7 +125,15 @@ ul {
 .invisible-title {
     display: none;
 }
+.advantages-list {
+  padding: 0px;
+  margin: 0px;
+}
+.advantages-logo {
+  margin-bottom: 30px;
+}
 .advantages-list .title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
@@ -94,13 +142,19 @@ ul {
   color: var(--title-text-color);
 }
 .advantages-text {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
+  padding: 0px;
+  margin: 0px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 
 /* Секция Деятельность */
+.ativity-list {
+  padding: 0px;
+  margin: 0px;
+}
 .ativity-list .title {
   font-weight: 700;
   font-size: 14px;
@@ -111,6 +165,10 @@ ul {
 }
 
 /* Секция Команда */
+.team-list {
+  padding: 0px;
+  margin: 0px;
+}
 .team-list .title {
   font-weight: 500;
   font-size: 16px;
@@ -126,7 +184,10 @@ ul {
 }
 
 /* Секция Постоянные клиенты */
-
+.client-list {
+  padding: 0px;
+  margin: 0px;
+}
 
 /* Футтер */
 .logo-footer {
@@ -161,15 +222,29 @@ ul {
   
   /* Стили для portfolio.html */
 
+  .portfolio-header {
+    margin-bottom: 94px;
+  }
+
   /* Секция */
+  .projects-button {
+    margin-top: 0px;
+    margin-bottom: 34px;
+    padding: 0px;
+  }
+  .projects {
+    padding: 0px;
+    margin: 0px;
+  }
+
   .radio-button {
-      background-color: #F5F4FA;
-      color: #212121;
+    background-color: #F5F4FA;
+    color: #212121;
   }
   .radio-button:hover,
   .radio-button:focus {
-      background-color: #2196f3;
-      color: #ffffff;
+    background-color: #2196f3;
+    color: #ffffff;
   }
   .project-title {
     font-weight: 700;

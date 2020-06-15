@@ -3,6 +3,7 @@
   --title-text-color: #212121;
   --title-secondary-text-color: #ffffff;
   --primary-background-color: #e5e5e5;
+  --accent-bg-color: #F5F4FA;
   --accent-color: #2196f3;
 }
 body {
@@ -39,10 +40,21 @@ html {
   margin: 0px;
   padding: 0px;
 }
+
+/* Header */
+.page-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Logo */
 .logo-header {
+  display: block;
+
   font-family: Raleway, sans-serif;
   color: #212121;
+
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -54,8 +66,22 @@ html {
 }
 
 /* Навигация */
+.site-nav {
+  padding: 0px;
+  margin-left: 83px;
+  display: flex;
+}
+.site-nav li:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav a {
     color: #212121;
+}
+.site-nav .link {
+  display: block;
+  padding-top: 37px;
+  padding-bottom: 30px;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -64,8 +90,18 @@ html {
 .site-nav .link.current {
     color: #2196f3;
 }
+
+/* Контакты */
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
 .contacts a {
   color: #212121;
+}
+.contacts .tipe + .tipe {
+  margin-left: 30px;
+
 }
 .contacts .tipe:hover,
 .contacts .tipe:focus { 
@@ -81,6 +117,7 @@ html {
 .hero-title {
   margin-top: 0px;
   margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -92,8 +129,10 @@ html {
   display: inline-block;
   border-radius: 4px;
   padding: 10px 32px;
+
   background-color: var(--accent-color);
   color: var(--title-secondary-text-color);
+
   font-size: 16px;
   line-height: 30px;
   min-width: 200px;
@@ -169,7 +208,18 @@ html {
   padding: 0px;
   margin: 0px;
 }
+.section.team {
+  background-color: #F5F4FA;
+}
+.section-title.team {
+  padding-top: 40px;
+}
+.team-photo {
+  margin-bottom: 30px;
+}
 .team-list .title {
+  padding: 0px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
@@ -177,6 +227,9 @@ html {
   color: var(--title-text-color);
 }
 .team-text {
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 15px;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
@@ -246,7 +299,15 @@ html {
     background-color: #2196f3;
     color: #ffffff;
   }
+  .projects-img {
+    display: block;
+    padding: 0px;
+    margin-bottom: 20px;
+  }
   .project-title {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 15px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -254,6 +315,8 @@ html {
     color: var(--title-text-color);
   }
   .text-secondary {
+    padding: 0px;
+    margin: 0px;
     font-weight: normal;
     font-size: 18px;
     line-height: 1.5;
@@ -261,6 +324,9 @@ html {
     color: var(--title-secondary-text-color);
   }
   .text-primary {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
     font-weight: normal;
     font-size: 16px;
     line-height: 1.9;

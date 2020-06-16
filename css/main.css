@@ -144,7 +144,6 @@ html {
 
 /* Секции */
 .section{
-  margin-bottom: 94px;
   margin-top: 0px;
   padding: 0px;
 }
@@ -161,6 +160,9 @@ html {
 }
 
 /* Секция Приемущества */
+.section.advantages {
+  margin-bottom: 94px;
+}
 .invisible-title {
     display: none;
 }
@@ -194,11 +196,18 @@ html {
 }
 
 /* Секция Деятельность */
-.ativity-list {
+.section.activity {
+  margin-bottom: 140px;
+}
+.activity-list {
+  display: flex;
   padding: 0px;
   margin: 0px;
 }
-.ativity-list .title {
+.activity-box:not(:last-child) {
+  margin-right: 30px;
+}
+.activity-list .title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
@@ -208,15 +217,26 @@ html {
 }
 
 /* Секция Команда */
+.section.team {
+  margin-bottom: 48px;
+  background-color: #F5F4FA;
+}
 .team-list {
-  padding: 0px;
+  display: flex;
+  padding-bottom: 140px;
+  padding-left: 0px;
   margin: 0px;
 }
-.section.team {
-  background-color: #F5F4FA;
+.team-box:not(:last-child) {
+  margin-right: 30px;
 }
 .section-title.team {
   padding-top: 40px;
+  margin-bottom: 64px;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .team-photo {
   margin-bottom: 30px;
@@ -241,9 +261,16 @@ html {
 }
 
 /* Секция Постоянные клиенты */
-.client-list {
+.section.clients {
+  margin-bottom: 94px;
+}
+.clients-list {
+  display: flex;
   padding: 0px;
   margin: 0px;
+}
+.clients-box:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Футтер */
@@ -315,7 +342,7 @@ html {
     margin: 0px;
   }
   .projects-item {
-    width: 370px;
+    width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
   }
